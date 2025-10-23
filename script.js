@@ -6,10 +6,11 @@ const overlayLeft = document.querySelector('.overlay-left');
 const overlayRight = document.querySelector('.overlay-right');
 
 registerBtn.addEventListener('click', () => {
+  
   overlayContainer.classList.add('overlay-toggleRight');
-  overlayLeft.classList.add('moveLeft');
+  overlayContainer.classList.remove('overlay-toggleLeft');
 });
 signinBtn.addEventListener('click', () => {
   overlayContainer.classList.remove('overlay-toggleRight');
-  overlayLeft.classList.remove('moveLeft');
+  overlayContainer.classList.add('overlay-toggleLeft');
 });

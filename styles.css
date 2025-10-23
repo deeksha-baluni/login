@@ -118,7 +118,6 @@ body{
     top:0;
     left:-75%;
     border-radius: 100px;
-
     transition: transform 2s ease-in-out;
 }
 
@@ -163,12 +162,14 @@ body{
 .overlay-left{
     top:0;
     left:55%;
-    transition: transform 1s ease-in-out;
+    transition: transform 1s ease-in-out, opacity 1s ease-in-out;
+    opacity: 1;
 }
 .overlay-right{
     top:0;
     left:-5%;
-    opacity:0;
+    transition: transform 1s ease-in-out, opacity 1s ease-in-out;
+    opacity:0; 
 }
 
 
@@ -179,9 +180,27 @@ body{
    transform: translateX(100%);
 }
 
-.moveLeft{
-   transform: translateX(-100%);
+.overlay-toggleRight .overlay-left{
+    opacity: 0;
 }
+
+.overlay-toggleRight .overlay-right{
+    opacity: 1;
+}
+
+.overlay-toggleLeft{
+    transform: translateX(0%);
+}
+
+.overlay-toggleLeft .overlay-right{
+    opacity: 1;
+}
+
+.overlay-toggleLeft .overlay-right{
+    opacity: 0;
+}
+
+
 
 
 
