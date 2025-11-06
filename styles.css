@@ -118,7 +118,7 @@ body{
     top:0;
     left:-75%;
     border-radius: 100px;
-    transition: transform 2s ease-in-out;
+    transition: transform 1.5s ease-in-out;
 }
 
 .overlay{
@@ -177,7 +177,8 @@ body{
 
 /* toggle class */
 .overlay-toggleRight{
-   transform: translateX(100%);
+   transform: translateX(100%) ;
+
 }
 
 .overlay-toggleRight .overlay-left{
@@ -189,7 +190,7 @@ body{
 }
 
 .overlay-toggleLeft{
-    transform: translateX(0%);
+    transform: translateX(0%) scale(1);
 }
 
 .overlay-toggleLeft .overlay-right{
